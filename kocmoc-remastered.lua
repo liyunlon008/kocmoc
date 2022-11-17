@@ -2,25 +2,25 @@
 
 // Kocmoc Gen 3 \\
 
-Credits:
-[Boxking776]: Owner, developer, pet simulator x, bee swarm simulator
-[Weuz]: Bee Swarm Simulator, function library (xlp)
-[Devixl]: Bee Swarm Simulator, function library (xlp)
+学分:
+[Boxking776]:所有者，开发者，宠物模拟器x，蜂群模拟器
+[Weuz]:蜂群模拟器，函数库(xlp)
+[Devixl]:蜂群模拟器，函数库(xlp)
 
-Kocmoc is owned, coded developed and managed by Boxking776 alone. Anyone else who claims to be a developer is an impersonator.
-Kocmoc is mostly open source apart from some premium functions.
-Any attempts at stealing Kocmoc source and using it without credit will result in a valid takedown request *.
+Kocmoc由Boxking776独立拥有、编码、开发和管理。任何声称自己是开发人员的人都是冒牌货。
+除了一些高级功能外，Kocmoc基本上是开源的。
+任何试图窃取Kocmoc源代码并在没有信用的情况下使用它的行为都将导致有效的下架请求*。
 
-* In moderation. You can use sections of code, however you are prohibited from ripping off the entire source as your own.
+适度。您可以使用部分代码，但是禁止将整个源代码作为自己的。
 
-Thanks for using kocmoc! ^-^
+感谢您使用kocmoc!^ - ^
 
 ]]
 
 if game.PlaceId == 1537690962 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/games/bss.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wook-QY/kocmoc/main/games/bss.lua"))()
 elseif game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/games/psx.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Wook-QY/kocmoc/main/games/psx.lua"))()
 else
-	game.Players.LocalPlayer:Kick("Error loadng kocmoc.\n\nNo supported game found.\n\nPlease join a supported game.")
+	game.Players.LocalPlayer:Kick("加载kocmoc错误.\n\n没有找到支持的游戏。请加入支持的游戏.")
 end

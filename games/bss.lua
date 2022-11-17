@@ -940,7 +940,7 @@ farmt:CreateToggle("自动财富时钟", nil, function(State) kocmoc.toggles.clo
 -- BEESMAS MARKER farmt:CreateToggle("Auto Gingerbread Bears", nil, function(State) kocmoc.toggles.collectgingerbreads = State end)
 -- BEESMAS MARKER farmt:CreateToggle("Auto Samovar", nil, function(State) kocmoc.toggles.autosamovar = State end)
 -- BEESMAS MARKER farmt:CreateToggle("Auto Stockings", nil, function(State) kocmoc.toggles.autostockings = State end)
-farmt:CreateToggle("自动播种机", nil, function(State) kocmoc.toggles.autoplanters = State end):AddToolTip("Will re-plant your planters after converting, if they hit 100%")
+farmt:CreateToggle("自动播种机", nil, function(State) kocmoc.toggles.autoplanters = State end):AddToolTip("将在转换后重新种植您的花盆，如果达到100%")
 -- BEESMAS MARKER farmt:CreateToggle("Auto Honey Candles", nil, function(State) kocmoc.toggles.autocandles = State end)
 -- BEESMAS MARKER farmt:CreateToggle("Auto Beesmas Feast", nil, function(State) kocmoc.toggles.autofeast = State end)
 -- BEESMAS MARKER farmt:CreateToggle("Auto Onett's Lid Art", nil, function(State) kocmoc.toggles.autoonettart = State end)

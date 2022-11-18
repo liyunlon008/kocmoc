@@ -842,15 +842,15 @@ local function fetchBuffTable(stats)
     return stTab
 end
 
-local Config = { WindowName = "Kocmoc v"..temptable.version.." Remastered", Color = Color3.fromRGB(164, 84, 255), Keybind = Enum.KeyCode.Semicolon}
+local Config = { WindowName = "Kocmoc 由狛犽汉化 v"..temptable.version.." Remastered", Color = Color3.fromRGB(164, 84, 255), Keybind = Enum.KeyCode.Semicolon}
 local Window = library:CreateWindow(Config, game:GetService("CoreGui"))
 
-local hometab = Window:CreateTab("Home")
-local farmtab = Window:CreateTab("Farming")
-local combtab = Window:CreateTab("Combat")
-local itemstab = Window:CreateTab("Items")
-local misctab = Window:CreateTab("Misc")
-local setttab = Window:CreateTab("Settings")
+local hometab = Window:CreateTab("主页")
+local farmtab = Window:CreateTab("农业")
+local combtab = Window:CreateTab("战斗")
+local itemstab = Window:CreateTab("项目")
+local misctab = Window:CreateTab("杂项")
+local setttab = Window:CreateTab("设置")
 
 local loadingInfo = hometab:CreateSection("Startup")
 local loadingFunctions = loadingInfo:CreateLabel("Loading Functions..")
@@ -956,15 +956,15 @@ farmt:CreateLabel(" ")
 farmt:CreateToggle("X转换后重置蜜蜂能量",nil,function(bool) kocmoc.vars.resetbeeenergy = bool end)
 farmt:CreateTextBox("兑换结果", "默认 = 3", true, function(Value) kocmoc.vars.resettimer = tonumber(Value) end)
 
-local mobkill = combtab:CreateSection("Combat")
-mobkill:CreateToggle("Train Crab", nil, function(State) if State then api.humanoidrootpart().CFrame = CFrame.new(-307.52117919922, 107.91863250732, 467.86791992188) end end)
-mobkill:CreateToggle("Train Snail", nil, function(State) fd = game.Workspace.FlowerZones['Stump Field'] if State then api.humanoidrootpart().CFrame = CFrame.new(fd.Position.X, fd.Position.Y-6, fd.Position.Z) else api.humanoidrootpart().CFrame = CFrame.new(fd.Position.X, fd.Position.Y+2, fd.Position.Z) end end)
-mobkill:CreateToggle("Kill Mondo", nil, function(State) kocmoc.toggles.killmondo = State end)
-mobkill:CreateToggle("Kill Vicious", nil, function(State) kocmoc.toggles.killvicious = State end)
-mobkill:CreateToggle("Kill Windy", nil, function(State) kocmoc.toggles.killwindy = State end)
-mobkill:CreateToggle("Auto Kill Mobs", nil, function(State) kocmoc.toggles.autokillmobs = State end):AddToolTip("Kills mobs after x pollen converting")
-mobkill:CreateToggle("Avoid Mobs", nil, function(State) kocmoc.toggles.avoidmobs = State end)
-mobkill:CreateToggle("Auto Ant", nil, function(State) kocmoc.toggles.autoant = State end):AddToolTip("You Need Spark Stuff 😋; Goes to Ant Challenge after pollen converting")
+local mobkill = combtab:CreateSection("战斗")
+mobkill:CreateToggle("火车蟹", nil, function(State) if State then api.humanoidrootpart().CFrame = CFrame.new(-307.52117919922, 107.91863250732, 467.86791992188) end end)
+mobkill:CreateToggle("火车蜗牛", nil, function(State) fd = game.Workspace.FlowerZones['Stump Field'] if State then api.humanoidrootpart().CFrame = CFrame.new(fd.Position.X, fd.Position.Y-6, fd.Position.Z) else api.humanoidrootpart().CFrame = CFrame.new(fd.Position.X, fd.Position.Y+2, fd.Position.Z) end end)
+mobkill:CreateToggle("杀掉世界", nil, function(State) kocmoc.toggles.killmondo = State end)
+mobkill:CreateToggle("杀掉恶毒", nil, function(State) kocmoc.toggles.killvicious = State end)
+mobkill:CreateToggle("杀掉风", nil, function(State) kocmoc.toggles.killwindy = State end)
+mobkill:CreateToggle("自动杀掉暴徒", nil, function(State) kocmoc.toggles.autokillmobs = State end):AddToolTip("X花粉转化后杀死暴徒")
+mobkill:CreateToggle("躲避暴徒", nil, function(State) kocmoc.toggles.avoidmobs = State end)
+mobkill:CreateToggle("自动蚂蚁", nil, function(State) kocmoc.toggles.autoant = State end):AddToolTip("你需要火花物质😋；花粉转换后去蚂蚁挑战赛")
 
 local serverhopkill = combtab:CreateSection("Serverhopping Combat")
 serverhopkill:CreateButton("Vicious Bee Serverhopper [⚠️][📜]",function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/functions/viciousbeeserverhop.lua"))() end):AddToolTip("Serverhops for rouge vicious bees")

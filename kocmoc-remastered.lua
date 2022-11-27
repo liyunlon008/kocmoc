@@ -18,9 +18,9 @@ Kocmoc由Boxking776独立拥有、编码、开发和管理。任何声称自己�
 ]]
 
 if game.PlaceId == 1537690962 then
-	loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/Wook-QY/kocmoc@main/games/bss.lua"))()
+	loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/liyunlon008/kocmoc@main/games/bss.lua"))()
 elseif game.PlaceId == 6284583030 or game.PlaceId == 7722306047 then
-	loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/Wook-QY/kocmoc@main/games/psx.lua"))()
+	loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/liyunlon008/kocmoc@main/games/psx.lua"))()
 else
 	game.Players.LocalPlayer:Kick("加载kocmoc错误.\n\n没有找到支持的游戏。请加入支持的游戏.")
 end
